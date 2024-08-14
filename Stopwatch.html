@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Rich Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="stopwatch">
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00.00</div>
+    <div class="controls">
+        <button id="startStopBtn">Start</button>
+        <button id="lapBtn">Lap</button>
+        <button id="resetBtn">Reset</button>
+        <button id="saveBtn">Save Session</button>
+        <button id="loadBtn">Load Session</button>
+        <button id="toggleThemeBtn">Toggle Dark Mode</button>
+        <button id="exportBtn">Export Laps to CSV</button>
+    </div>
+    <ul id="lapsList"></ul>
+    <p id="averageTime">Average Lap Time: 00:00:00.00</p>
+</div>
+
+<div class="countdown">
+    <h2>Countdown Timer</h2>
+    <input type="number" id="countdownInput" placeholder="Enter seconds">
+    <button id="startCountdownBtn">Start Countdown</button>
+    <div id="countdownDisplay">00:00</div>
+</div>
+
+<audio id="startSound" src="start-sound.mp3"></audio>
+<audio id="stopSound" src="stop-sound.mp3"></audio>
+<audio id="lapSound" src="lap-sound.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
